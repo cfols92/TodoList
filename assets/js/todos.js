@@ -32,7 +32,9 @@ $("input[type='text']").keypress(function(event)
 });
 
 //toggle the input using the plus icon
-$(".fa-plus").click(function()
+$("#toggler").click(function()
 {
     $("input[type='text']").fadeToggle();
+    $(this).toggleClass("fa-plus");
+    $(this).toggleClass("fa-minus");
 });
